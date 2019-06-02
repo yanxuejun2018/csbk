@@ -370,6 +370,7 @@ export default {
 			}
 		})
 	},
+	//点击搜索
 	onNavigationBarSearchInputClicked() {
 		uni.navigateTo({
 			url:"../search/search",
@@ -377,6 +378,7 @@ export default {
 			animationDuration:500
 		})
 	},
+	//点击
 	onNavigationBarButtonTap(e) {
 			if(e.index == 1){
 				uni.navigateTo({
