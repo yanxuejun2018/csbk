@@ -49,8 +49,9 @@
 var _default =
 {
   data: function data() {
-    return {};
-
+    return {
+      isguanzhu: this.item.guanzhu,
+      infonum: this.item.infonum };
 
   },
   props: {
@@ -59,7 +60,7 @@ var _default =
 
   methods: {
     guanzhu: function guanzhu() {
-      this.item.isguanzhu = true;
+      this.isguanzhu = true;
       uni.showToast({
         title: "关注成功" });
 
@@ -67,32 +68,32 @@ var _default =
     caozuo: function caozuo(type) {
       switch (type) {
         case "ding":
-          if (this.item.infonum.index == 1) {
+          if (this.infonum.index == 1) {
             return;
           }
-          this.item.infonum.dingnum++;
-          if (this.item.infonum.index == 2) {
-            this.item.infonum.cainum--;
+          this.infonum.dingnum++;
+          if (this.infonum.index == 2) {
+            this.infonum.cainum--;
           }
-          this.item.infonum.index = 1;
+          this.infonum.index = 1;
 
           break;
         case "cai":
-          if (this.item.infonum.index == 2) {
+          if (this.infonum.index == 2) {
             return;
           }
-          this.item.infonum.cainum++;
-          if (this.item.infonum.index == 1) {
-            this.item.infonum.dingnum--;
+          this.infonum.cainum++;
+          if (this.infonum.index == 1) {
+            this.infonum.dingnum--;
           }
-          this.item.infonum.index = 2;
+          this.infonum.index = 2;
         default:
           break;}
 
     },
     //进入详情页
     opendetail: function opendetail() {
-      console.log(1, " at componets\\index\\index-list.vue:85");
+      console.log(1, " at componets\\index\\index-list.vue:86");
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

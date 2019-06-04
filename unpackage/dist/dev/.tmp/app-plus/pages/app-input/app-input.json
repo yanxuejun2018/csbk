@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "bounce": "none",
+  "titleNView": false,
+  "usingComponents": {
+    "uni-nav-bar": "/componets/uni-nav-bar/uni-nav-bar",
+    "uni-popup": "/componets/uni-popup/uni-popup",
+    "uploud-images": "/componets/common/uploader-images"
+  }
 }

@@ -136,6 +136,7 @@ $colorf:#fff;
 	.index-list2 {
 		padding-top: 15upx;
 		font-size: 32upx;
+		color: #333;
 	}
 	.index-list3 {
 		position: relative;

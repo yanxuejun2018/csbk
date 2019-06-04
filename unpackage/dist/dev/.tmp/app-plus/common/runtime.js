@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"componets/common/load-more":1,"componets/common/no-thing":1,"componets/index/index-list":1,"componets/index/swiper-tab-header":1};
+/******/ 		var cssChunks = {"componets/common/load-more":1,"componets/common/no-thing":1,"componets/index/index-list":1,"componets/index/swiper-tab-header":1,"componets/common/common-list":1,"componets/news/news-nav-bar":1,"componets/common/uploader-images":1,"componets/uni-nav-bar/uni-nav-bar":1,"componets/uni-popup/uni-popup":1,"componets/uni-icon/uni-icon":1,"componets/uni-status-bar/uni-status-bar":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"componets/common/load-more":"componets/common/load-more","componets/common/no-thing":"componets/common/no-thing","componets/index/index-list":"componets/index/index-list","componets/index/swiper-tab-header":"componets/index/swiper-tab-header"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"componets/common/load-more":"componets/common/load-more","componets/common/no-thing":"componets/common/no-thing","componets/index/index-list":"componets/index/index-list","componets/index/swiper-tab-header":"componets/index/swiper-tab-header","componets/common/common-list":"componets/common/common-list","componets/news/news-nav-bar":"componets/news/news-nav-bar","componets/common/uploader-images":"componets/common/uploader-images","componets/uni-nav-bar/uni-nav-bar":"componets/uni-nav-bar/uni-nav-bar","componets/uni-popup/uni-popup":"componets/uni-popup/uni-popup","componets/uni-icon/uni-icon":"componets/uni-icon/uni-icon","componets/uni-status-bar/uni-status-bar":"componets/uni-status-bar/uni-status-bar"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

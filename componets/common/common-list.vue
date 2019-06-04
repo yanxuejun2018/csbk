@@ -99,6 +99,7 @@
 				}
 				&:nth-child(3){
 					position: relative;
+					margin-bottom: 10upx;
 					.common-list-play{
 						color: #FFFFFF;
 						font-size: 100upx;
@@ -149,6 +150,7 @@
 					padding: 0 10upx;
 					font-size: 26upx;
 					text-align: center;
+					color: #666;
 				}
 				text{
 					display: inline-block;
@@ -167,6 +169,7 @@
 				align-items: center;
 				justify-content: space-between;
 				text{
+					font-size: 28upx;
 					margin-left: 10upx;
 					padding-left: 5upx;
 				}

@@ -380,6 +380,7 @@
       } });
 
   },
+  //点击搜索
   onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked() {
     uni.navigateTo({
       url: "../search/search",
@@ -387,6 +388,7 @@
       animationDuration: 500 });
 
   },
+  //点击
   onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     if (e.index == 1) {
       uni.navigateTo({

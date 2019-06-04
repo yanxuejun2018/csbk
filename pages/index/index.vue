@@ -9,6 +9,7 @@
 						<block v-for="(newsitem,index2) in tab.list" :key="index2">
 							<indexList :item=newsitem ></indexList>
 						</block>
+						<!-- 下拉加载 -->
 						<loadMore :loadtext=tab.loadtext></loadMore>
 					</template>
 					

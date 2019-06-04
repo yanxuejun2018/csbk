@@ -1,4 +1,8 @@
 {
-  "navigationBarTitleText": "动态",
-  "usingComponents": {}
+  "titleNView": false,
+  "usingComponents": {
+    "common-list": "/componets/common/common-list",
+    "news-nav-bar": "/componets/news/news-nav-bar",
+    "load-more": "/componets/common/load-more"
+  }
 }
