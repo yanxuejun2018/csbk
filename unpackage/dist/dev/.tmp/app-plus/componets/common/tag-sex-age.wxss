@@ -1,0 +1,14 @@
+
+text.data-v-2455b55e{
+	display: inline-block;
+	line-height: 24rpx;
+	color: #fff;
+	background-color: #007AFF;font-size: 23rpx; margin-left: 10rpx;
+	padding: 5rpx 10rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
+}
+.icon-nv.data-v-2455b55e{
+	background-color: #ff698d !important;
+}
+

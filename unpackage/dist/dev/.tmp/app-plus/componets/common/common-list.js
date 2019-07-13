@@ -8,54 +8,55 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tagSexAge = function tagSexAge() {return __webpack_require__.e(/*! import() | componets/common/tag-sex-age */ "componets/common/tag-sex-age").then(__webpack_require__.bind(null, /*! ./tag-sex-age.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\tag-sex-age.vue"));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
@@ -72,7 +73,10 @@ var _default =
       uni.showToast({
         title: "关注成功" });
 
-    } } };exports.default = _default;
+    } },
+
+  components: {
+    tagSexAge: tagSexAge } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),

@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"user-body { padding: 0 ",[0,20],"; }\n",],undefined,{path:"./pages/user-list/user-list.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user-list/user-list.wxml') } }));

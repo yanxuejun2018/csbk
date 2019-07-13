@@ -56,13 +56,15 @@
 .index-list .index-list1 view:first-child image.data-v-d4933f1a {
         width: 85rpx;
         height: 85rpx;
-        border-radius: 100%;
+        -webkit-border-radius: 100%;
+                border-radius: 100%;
         margin-right: 10rpx;
 }
 .index-list .index-list1 view.data-v-d4933f1a:last-child {
       padding: 0 10rpx;
       background-color: #eee;
-      border-radius: 5rpx;
+      -webkit-border-radius: 5rpx;
+              border-radius: 5rpx;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -75,6 +77,7 @@
 .index-list .index-list2.data-v-d4933f1a {
     padding-top: 15rpx;
     font-size: 32rpx;
+    color: #333;
 }
 .index-list .index-list3.data-v-d4933f1a {
     position: relative;
@@ -82,7 +85,8 @@
 }
 .index-list .index-list3 image.data-v-d4933f1a {
       width: 100%;
-      border-radius: 20rpx;
+      -webkit-border-radius: 20rpx;
+              border-radius: 20rpx;
 }
 .index-list .index-list3 .index-list-pay.data-v-d4933f1a {
       color: #fff;
@@ -100,7 +104,8 @@
       right: 8rpx;
       font-size: 22rpx;
       padding: 0 12rpx;
-      border-radius: 40rpx;
+      -webkit-border-radius: 40rpx;
+              border-radius: 40rpx;
       color: #fff;
       background: #333;
       opacity: .7;

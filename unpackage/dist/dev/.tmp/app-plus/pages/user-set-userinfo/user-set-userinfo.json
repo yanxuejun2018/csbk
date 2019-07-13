@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "绑定资料",
+  "scrollIndicator": "none",
+  "usingComponents": {
+    "mpvue-city-picker": "/componets/mpvue-citypicker/mpvueCityPicker"
+  }
+}

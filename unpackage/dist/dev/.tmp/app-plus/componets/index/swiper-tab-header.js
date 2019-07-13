@@ -25,7 +25,15 @@ var _default =
 {
   props: {
     tabBars: Array,
-    tabIndex: Number },
+    tabIndex: Number,
+    scrollItemStyle: {
+      type: String,
+      default: "" },
+
+    scrollStyle: {
+      type: String,
+      default: "" } },
+
 
 
 

@@ -109,7 +109,8 @@
       border-top: 5rpx solid #FFE933;
       width: 70rpx;
       bottom: 12rpx;
-      border-radius: 20rpx;
+      -webkit-border-radius: 20rpx;
+              border-radius: 20rpx;
 }
 .comment-list.data-v-356fd41e {
   display: -webkit-box;
@@ -126,7 +127,8 @@
 .comment-list .comment-list-l image.data-v-356fd41e {
       width: 90rpx;
       height: 90rpx;
-      border-radius: 100%;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
 }
 .comment-list .comment-list-r.data-v-356fd41e {
     -webkit-box-flex: 1;
@@ -162,13 +164,15 @@
         background: #333;
         font-size: 24rpx;
         opacity: .8;
-        border-radius: 20rpx;
+        -webkit-border-radius: 20rpx;
+                border-radius: 20rpx;
         padding: 0 20rpx;
 }
 .comment-list .comment-list-r view:nth-child(3) .common-list-share.data-v-356fd41e {
         width: 100%;
         padding: 10rpx;
-        border-radius: 10rpx;
+        -webkit-border-radius: 10rpx;
+                border-radius: 10rpx;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         background-color: #EEEEEE;
@@ -186,7 +190,8 @@
 }
 .comment-list .comment-list-r view:nth-child(3) image.data-v-356fd41e {
         width: 100%;
-        border-radius: 10rpx;
+        -webkit-border-radius: 10rpx;
+                border-radius: 10rpx;
 }
 .comment-list .comment-list-r .comment-list-r-one.data-v-356fd41e {
       display: -webkit-box;
@@ -220,7 +225,8 @@
         font-size: 23rpx;
         margin-left: 10rpx;
         padding: 5rpx 10rpx;
-        border-radius: 20rpx;
+        -webkit-border-radius: 20rpx;
+                border-radius: 20rpx;
 }
 .comment-list .comment-list-r .comment-list-r-three.data-v-356fd41e {
       display: -webkit-box;

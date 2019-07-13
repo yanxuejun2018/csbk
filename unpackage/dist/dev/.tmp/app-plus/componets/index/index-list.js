@@ -93,7 +93,10 @@ var _default =
     },
     //进入详情页
     opendetail: function opendetail() {
-      console.log(1, " at componets\\index\\index-list.vue:86");
+      uni.navigateTo({
+        url: "../../pages/detail/detail?detailData=" + JSON.stringify(this.item) });
+
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 

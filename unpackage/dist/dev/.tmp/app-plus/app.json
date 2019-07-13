@@ -5,7 +5,19 @@
     "pages/paper/paper",
     "pages/me/me",
     "pages/search/search",
-    "pages/app-input/app-input"
+    "pages/app-input/app-input",
+    "pages/topic-nav/topic-nav",
+    "pages/topic-detail/topic-detail",
+    "pages/user-list/user-list",
+    "pages/user-chat/user-chat",
+    "pages/detail/detail",
+    "pages/user-set/user-set",
+    "pages/user-set-repassword/user-set-repassword",
+    "pages/user-set-email/user-set-email",
+    "pages/user-set-userinfo/user-set-userinfo",
+    "pages/user-set-help/user-set-help",
+    "pages/user-set-about/user-set-about",
+    "pages/login/login"
   ],
   "subPackages": [],
   "window": {
@@ -46,11 +58,12 @@
       }
     ]
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
   "appname": "仿糗事百科app",
-  "compilerVersion": "1.9.9",
+  "compilerVersion": "2.0.1",
   "usingComponents": {}
 }

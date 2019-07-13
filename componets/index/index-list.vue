@@ -83,7 +83,10 @@
 			},
 			//进入详情页
 			opendetail(){
-				console.log(1);
+				uni.navigateTo({
+					url:"../../pages/detail/detail?detailData="+JSON.stringify(this.item)
+				
+				})
 			}
 		}
 	}

@@ -46,13 +46,14 @@
 		}, {
 			"path": "pages/paper/paper",
 			"style": {
+				"enablePullDownRefresh":true,
 				"navigationBarTitleText": "小纸条",
 				"app-plus":{
 					"titleNView":{
 						"buttons":[
 							{
 								"color": "#000000",
-								"colorPressed": "#BBBBBB",
+								"colorPressed": "#FF9619",
 								"float": "left",
 								"fontSize": "22px",
 								"fontSrc": "/static/font/icon.ttf",
@@ -73,16 +74,30 @@
 		}, {
 			"path": "pages/me/me",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+				"scrollIndicator":"none",
+					  "bounce": "none", //关闭窗口回弹效果
+					"titleNView": {
+						"buttons":[
+							{
+							"type":"menu"
+						}
+						]
+					}
+				}
 			}
 		}
 
 		, {
 			"path": "pages/search/search",
 			"style": {
+				"enablePullDownRefresh":true,
 				"app-plus": {
+				
 					"scrollIndicator": "none", //隐藏滚动条
 					"bounce": "none", //关闭回弹
+						
 					"titleNView": {
 						"autoBackButton":false, //隐藏app上面返回箭头
 						"searchInput": {
@@ -131,6 +146,150 @@
 					"scrollIndicator":"none",
 					"titleNView":{
 						"type":"transparent",//
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-list/user-list",
+				"style": {
+					"app-plus": {
+						"animationType":"slide-in-left",
+						"scrollIndicator": "none", //隐藏滚动条
+						"bounce": "none", //关闭回弹
+						"titleNView": {
+							"autoBackButton":false, //隐藏app上面返回箭头
+							"searchInput": {
+								"align": "left",
+								"autoFocus": true,
+								"backgroundColor": "#F7F7F7",
+								"borderRadius": "4px",
+								"placeholder": "搜索好友",
+								"placeholderColor": "#ccc"
+							},
+							"buttons": [{
+									"color": "#BBBBBB",
+									"colorPressed": "#BBBBBB",
+									"float": "right",
+									"fontSize": "16px",
+									"text": "取消"
+								}
+							]
+						}
+					}
+				}
+        }
+        ,{
+            "path" : "pages/user-chat/user-chat",
+            "style" : {
+				"navigationBarTitleText":"聊天页",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/font/icon.ttf",
+								"text": "\ue628"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" : {
+				"navigationBarTitleText":"内容页",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"bounce":"none",
+					"titleNView":{
+						"buttons":[
+							{
+								"type":"menu"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set/user-set",
+            "style" : {
+				"navigationBarTitleText":"设置"
+			}
+        }
+        ,{
+            "path" : "pages/user-set-repassword/user-set-repassword",
+            "style" : {
+				"navigationBarTitleText":"修改密码",
+				"app-plus":{
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set-email/user-set-email",
+            "style" : {
+				"navigationBarTitleText":"绑定邮箱",
+				"app-plus":{
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set-userinfo/user-set-userinfo",
+            "style" : {
+				"navigationBarTitleText":"绑定资料",
+				"app-plus":{
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set-help/user-set-help",
+            "style" : {
+				"navigationBarTitleText":"意见反馈",
+				"app-plus":{
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-set-about/user-set-about",
+            "style" : {
+				"navigationBarTitleText":"关于糗百",
+				"app-plus":{
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {
+				"app-plus":{
+					"titleNView":false,
+					"bounce":"none",
+					"scrollIndicator":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/user-space/user-space",
+            "style" : {
+				"navigationBarTitleText":"个人空间",
+				"app-plus":{
+					"scrollIndicator":"none",
+					"titleNView":{
+						"type":"transparent",
 						"buttons":[
 							{
 								"type":"menu"

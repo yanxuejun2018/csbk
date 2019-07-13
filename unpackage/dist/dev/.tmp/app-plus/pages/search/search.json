@@ -1,4 +1,5 @@
 {
+  "enablePullDownRefresh": true,
   "scrollIndicator": "none",
   "bounce": "none",
   "titleNView": {
@@ -21,5 +22,9 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "index-list": "/componets/index/index-list",
+    "no-thing": "/componets/common/no-thing",
+    "load-more": "/componets/common/load-more"
+  }
 }

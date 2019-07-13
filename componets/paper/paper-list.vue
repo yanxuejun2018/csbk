@@ -1,5 +1,5 @@
 <template>
-	<view class="paper-list">
+	<view class="paper-list animated fadeInLeft fast" @tap="openChat">
 		<image :src="item.userpic" mode="widthFix" lazy-load></image>
 		<view class="list">
 			<view>{{item.username}}<text>{{item.time}}</text></view>
@@ -25,6 +25,14 @@
 		},
 		components:{
 			uniBadge
+		},
+		methods:{
+			openChat(){
+				uni.navigateTo({
+					url: '../../pages/user-chat/user-chat',
+					
+				});
+			}
 		}
 	}
 </script>
@@ -46,19 +54,23 @@
 			display: flex;
 			flex-direction: column;
 			view{
+				flex: 1;
 				display: flex;
 				justify-content: space-between;
+				align-items: flex-end;
 				&:first-child{
 					
 					font-size: 35upx;
 					text{
-						font-size: 28upx;
+						font-size: 26upx;
 							color: #CBCBCB;
 					}
 				}
 				&:last-child{
+					font-size: 28upx;
 					color: #999;
-					line-height: 2;
+
+					
 				}
 			}
 			

@@ -39,6 +39,7 @@
 
 
 
+
 {
   methods: {
     tapTab: function tapTab(e) {//点击tab-bar

@@ -1,0 +1,31 @@
+{
+  "animationType": "slide-in-left",
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "titleNView": {
+    "autoBackButton": false,
+    "searchInput": {
+      "align": "left",
+      "autoFocus": true,
+      "backgroundColor": "#F7F7F7",
+      "borderRadius": "4px",
+      "placeholder": "搜索好友",
+      "placeholderColor": "#ccc"
+    },
+    "buttons": [
+      {
+        "color": "#BBBBBB",
+        "colorPressed": "#BBBBBB",
+        "float": "right",
+        "fontSize": "16px",
+        "text": "取消"
+      }
+    ]
+  },
+  "usingComponents": {
+    "swiper-tab-header": "/componets/index/swiper-tab-header",
+    "user-list": "/componets/user-list/user-list",
+    "load-more": "/componets/common/load-more",
+    "no-thing": "/componets/common/no-thing"
+  }
+}

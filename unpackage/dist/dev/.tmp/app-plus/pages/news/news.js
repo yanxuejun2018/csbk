@@ -8,7 +8,12 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commonList = function commonList() {return __webpack_require__.e(/*! import() | componets/common/common-list */ "componets/common/common-list").then(__webpack_require__.bind(null, /*! ../../componets/common/common-list.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\common-list.vue"));};var newsNavBar = function newsNavBar() {return __webpack_require__.e(/*! import() | componets/news/news-nav-bar */ "componets/news/news-nav-bar").then(__webpack_require__.bind(null, /*! ../../componets/news/news-nav-bar.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\news\\news-nav-bar.vue"));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | componets/common/load-more */ "componets/common/load-more").then(__webpack_require__.bind(null, /*! ../../componets/common/load-more.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\load-more.vue"));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var commonList = function commonList() {return __webpack_require__.e(/*! import() | componets/common/common-list */ "componets/common/common-list").then(__webpack_require__.bind(null, /*! ../../componets/common/common-list.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\common-list.vue"));};var newsNavBar = function newsNavBar() {return __webpack_require__.e(/*! import() | componets/news/news-nav-bar */ "componets/news/news-nav-bar").then(__webpack_require__.bind(null, /*! ../../componets/news/news-nav-bar.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\news\\news-nav-bar.vue"));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | componets/common/load-more */ "componets/common/load-more").then(__webpack_require__.bind(null, /*! ../../componets/common/load-more.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\load-more.vue"));};var topicNav = function topicNav() {return __webpack_require__.e(/*! import() | componets/news/topic-nav */ "componets/news/topic-nav").then(__webpack_require__.bind(null, /*! ../../componets/news/topic-nav.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\news\\topic-nav.vue"));};var topicList = function topicList() {return __webpack_require__.e(/*! import() | componets/news/topic-list */ "componets/news/topic-list").then(__webpack_require__.bind(null, /*! ../../componets/news/topic-list.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\news\\topic-list.vue"));};var _default =
+
+
+
+
+
 
 
 
@@ -145,7 +150,68 @@
           path: "武汉市洪山区",
           sharenum: 20,
           commentnum: 21,
-          goodnum: 211 }] } };
+          goodnum: 211 }] },
+
+
+
+
+
+      topic: {
+        swiper: [
+        { src: "../../static/demo/banner2.jpg" },
+        { src: "../../static/demo/banner2.jpg" },
+        { src: "../../static/demo/banner2.jpg" }],
+
+        nav: [
+        { name: "最新" },
+        { name: "游戏" },
+        { name: "打卡" },
+        { name: "情感" },
+        { name: "故事" },
+        { name: "喜爱" }],
+
+        list: [
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 },
+
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 },
+
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 },
+
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 },
+
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 },
+
+        {
+          titlepic: "../../static/demo/topicpic/13.jpeg",
+          title: "话题名称",
+          desc: "我是话题描述",
+          totalnum: 50,
+          todaynum: 10 }] } };
 
 
 
@@ -165,7 +231,9 @@
   components: {
     commonList: commonList,
     newsNavBar: newsNavBar,
-    loadMore: loadMore },
+    loadMore: loadMore,
+    topicNav: topicNav,
+    topicList: topicList },
 
   methods: {
     //滑动切换

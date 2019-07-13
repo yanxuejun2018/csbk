@@ -8,20 +8,39 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexList = function indexList() {return __webpack_require__.e(/*! import() | componets/index/index-list */ "componets/index/index-list").then(__webpack_require__.bind(null, /*! ../../componets/index/index-list.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\index\\index-list.vue"));};var noThing = function noThing() {return __webpack_require__.e(/*! import() | componets/common/no-thing */ "componets/common/no-thing").then(__webpack_require__.bind(null, /*! ../../componets/common/no-thing.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\no-thing.vue"));};var loadMore = function loadMore() {return __webpack_require__.e(/*! import() | componets/common/load-more */ "componets/common/load-more").then(__webpack_require__.bind(null, /*! ../../componets/common/load-more.vue */ "F:\\mui\\cjtx\\仿糗事百科app\\仿糗事百科\\componets\\common\\load-more.vue"));};var _default =
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  components: {
+    indexList: indexList,
+    noThing: noThing,
+    loadMore: loadMore },
+
+  data: function data() {
+    return {
+      issearch: false,
+      loadtext: "上拉加载更多",
+      list: [],
+      searchtext: "" };
 
   },
-  //监听原生标题栏点击事件
+  // 监听原生标题导航按钮点击事件(取消按钮)
   onNavigationBarButtonTap: function onNavigationBarButtonTap(e) {
     if (e.index == 0) {
       uni.navigateBack({
@@ -29,14 +48,96 @@ var _default =
 
     }
   },
-  //变化
+  // 监听搜索框文本变化
   onNavigationBarSearchInputChanged: function onNavigationBarSearchInputChanged(e) {
-    console.log(e, " at pages\\search\\search.vue:24");
+    this.searchtext = e.text;
   },
-  //手机点击搜索
-  onNavigationBarSearchInputConfirmed: function onNavigationBarSearchInputConfirmed() {
+  // 监听点击搜索按钮事件
+  onNavigationBarSearchInputConfirmed: function onNavigationBarSearchInputConfirmed(e) {
+    if (e.text) {this.getdata();}
+  },
+  // 监听页面触底事件
+  onReachBottom: function onReachBottom() {
+    this.loadmore();
+  },
+  // 监听下拉刷新
+  onPullDownRefresh: function onPullDownRefresh() {
+    this.getdata();
+    uni.stopPullDownRefresh();
+  },
+  methods: {
+    // 搜索事件
+    getdata: function getdata() {var _this = this;
+      uni.showLoading();
+      // 请求服务器 post keyword:this.searchtext
+      setTimeout(function () {
+        var arr = [
+        {
+          userpic: "../../static/demo/userpic/12.jpg", //头像
+          username: "昵称",
+          isguanzhu: false,
+          title: "我是标题",
+          type: "img", // img:图文,video:视频
+          titlepic: "../../static/demo/datapic/11.jpg",
+          infonum: {
+            index: 0, //0:没有操作，1:顶,2:踩；
+            dingnum: 11,
+            cainum: 11 },
 
-  } };exports.default = _default;
+          commentnum: 10,
+          sharenum: 10 },
+
+        {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "昵称",
+          isguanzhu: true,
+          title: "我是标题",
+          type: "video", // img:图文,video:视频
+          titlepic: "../../static/demo/datapic/11.jpg",
+          playnum: "20w",
+          long: "2:47",
+          infonum: {
+            index: 1, //0:没有操作，1:顶,2:踩；
+            dingnum: 11,
+            cainum: 11 },
+
+          commentnum: 10,
+          sharenum: 10 }];
+
+
+        _this.list = arr;
+        uni.hideLoading();
+        _this.issearch = true;
+      }, 1000);
+    },
+    // 上拉加载
+    loadmore: function loadmore() {var _this2 = this;
+      if (this.loadtext != "上拉加载更多") {return;}
+      // 修改状态
+      this.loadtext = "加载中...";
+      // 获取数据
+      setTimeout(function () {
+        //获取完成
+        var obj = {
+          userpic: "../../static/demo/userpic/12.jpg",
+          username: "昵称",
+          isguanzhu: false,
+          title: "我是标题",
+          type: "img", // img:图文,video:视频
+          titlepic: "../../static/demo/datapic/11.jpg",
+          infonum: {
+            index: 0, //0:没有操作，1:顶,2:踩；
+            dingnum: 11,
+            cainum: 11 },
+
+          commentnum: 10,
+          sharenum: 10 };
+
+        _this2.list.push(obj);
+        _this2.loadtext = "上拉加载更多";
+      }, 1000);
+      // this.loadtext="没有更多数据了";
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["default"]))
 
 /***/ }),
