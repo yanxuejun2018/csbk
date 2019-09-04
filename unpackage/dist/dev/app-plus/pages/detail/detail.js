@@ -1,2 +1,0 @@
-setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"u-comment.",[1],"data-v-06456260 { padding: 0 ",[0,20],"; }\n.",[1],"u-comment-title.",[1],"data-v-06456260 { padding: ",[0,20],"; font-size: ",[0,30],"; font-weight: bold; }\n",],undefined,{path:"./pages/detail/detail.wxss"})();
-document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/detail/detail.wxml') } }));

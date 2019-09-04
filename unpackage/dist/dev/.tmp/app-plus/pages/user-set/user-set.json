@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "设置",
-  "usingComponents": {
-    "home-list": "/componets/home/home-list"
-  }
-}
